@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8; 
+    color: #222222; 
+    padding: 25px 15px;
+}
+
+.wrapper {
+    max-width: 950px;
+    margin: auto;
+}
+
+.main-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(34, 34, 34, 0.12);
+    padding: 30px 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+.main-card:hover {
+    box-shadow: 0 8px 20px rgba(34, 34, 34, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #16375b;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.mensaje {
+    background-color: #dbe6f7; 
+    color: #16375b; 
+    padding: 14px 18px;
+    border-radius: 7px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(22, 55, 91, 0.3);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 38px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px 14px;
+    border: 1.8px solid #a3a9b4;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #16375b; 
+    box-shadow: 0 0 6px rgba(22, 55, 91, 0.5);
+}
+
+.formulario button {
+    background-color: #16375b; 
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    padding: 14px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    box-shadow: 0 4px 12px rgba(22, 55, 91, 0.5);
+}
+
+.formulario button:hover {
+    background-color: #0f2942; 
+    box-shadow: 0 6px 16px rgba(15, 41, 66, 0.7);
+}
+
+
+.vacante h2 {
+    color: #16375b; 
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0f2942; 
+    padding-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.vacante ul {
+    list-style: none;
+}
+
+.vacante li {
+    background-color: #fff;
+    border: 1.6px solid #a3a9b4; /* gris medio */
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 9px rgba(163, 169, 180, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.vacante li:hover {
+    background-color: #e6edf9; /* azul muy claro */
+}
+
+.vacante li strong {
+    font-size: 19px;
+    color: #0f2942; /* azul más oscuro */
+}
+
+.vacante li em {
+    display: block;
+    margin: 9px 0 14px;
+    color: #555555;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Links */
+.vacante a {
+    color: #16375b; /* azul oscuro */
+    text-decoration: none;
+    margin-right: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.vacante a:hover {
+    color: #0f2942; /* azul más oscuro */
+    text-decoration: underline;
+}
+
+/* Postulaciones */
+.postulaciones {
+    margin-top: 18px;
+    background-color: #e6eefc; /* azul muy claro */
+    padding: 14px 18px;
+    border-left: 5px solid #16375b; /* azul oscuro */
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(22, 55, 91, 0.3);
+}
+
+.postulante {
+    border-bottom: 1px solid #a3a9b4;
+    padding: 10px 0;
+}
+
+.postulante:last-child {
+    border-bottom: none;
+}
+
+.postulante p {
+    margin: 5px 0;
+    color: #222222;
+    font-weight: 500;
+}
+.logout-button {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #122969; /* azul oscuro formal */
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px; /* bordes redondeados tipo cápsula */
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.logout-button:hover {
+  background-color: #2563eb; /* azul más brillante para hover */
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.5);
+  cursor: pointer;
+}
